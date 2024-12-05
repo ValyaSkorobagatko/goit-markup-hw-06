@@ -335,7 +335,7 @@ body {
 /* Decktop screen */
 @media only screen and (min-width: 1158px) {
   .main {
-    padding: 156px;
+    /*padding: 156px;*/
   }
 }
 
@@ -352,16 +352,24 @@ body {
   overflow: hidden;
 }
 
+/* Mobile screen */
 .picture-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 264px;
-  height: 112px;
-  background: #f4f4fd;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  margin-bottom: 8px;
+  display: none;
+}
+
+/* Decktop screen */
+@media only screen and (min-width: 1158px) {
+  .picture-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
 }
 
 /* Mobile screen */
@@ -1094,5 +1102,100 @@ input[type="email"]::placeholder {
   .mobile-menu-btn {
     display: none;
   }
+}
+/* #endregion Mobile menu */
+
+/* #region Mobile menu */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 72px 16px 40px 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  transform: translateX(100%);
+  transition: 250ms ease-in;
+  transition-property: transform;
+
+  background-color: #fff;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.button-mobile {
+  position: absolute;
+  margin: auto;
+  border-radius: 100%;
+
+  stroke-width: 1px;
+  stroke: #2e2f42;
+  fill: #2e2f42;
+  right: 24px;
+  top: 24px;
+}
+
+.btn-icon {
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: auto;
+  margin-top: 72px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.mobile-menu-link-studio {
+  color: #404bbf;
+}
+
+.mobile-menu-link {
+  color: #2e2f42;
+}
+
+.mobile-contacts-link {
+  color: #4d5ae5;
+}
+.contacts-link {
+  color: #434455;
+}
+
+.mobile-menu .social-link {
+}
+
+.mobile-menu-wraper {
+  margin-bottom: 48px;
+}
+
+.wraper-mobile-menu-list {
+}
+.mobile-menu-items {
+}
+.contacts-link {
+}
+.mobile-menu-social {
+  display: flex;
+  gap: 40px;
+}
+
+.social-item {
+}
+.social-link {
+}
+.social-icon {
 }
 /* #endregion Mobile menu */
