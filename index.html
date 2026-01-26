@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="page-header hide">
+    <header class="page-header">
       <div class="header-container container">
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html"
@@ -90,7 +90,7 @@
         </div>
       </section>
       <!--Main facts-->
-      <section class="main hide">
+      <section class="main">
         <div class="container">
           <h2 class="visually-hidden">Main facts description</h2>
           <ul class="main-list">
@@ -149,12 +149,14 @@
       <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
-          <ul class="wraper team-list">
+          <ul class="wrapper team-list">
             <li class="team-item">
               <img
                 class="team-img"
-                srcset="./images/team/img-1.jpg 1x, 
-                ./images/team/img-1@2x.jpg 2x"
+                srcset="
+                  ./images/team/img-1.jpg    1x,
+                  ./images/team/img-1@2x.jpg 2x
+                "
                 src="./images/team/img-1.jpg"
                 alt="team member 1"
                 width="264"
@@ -223,8 +225,10 @@
             <li class="team-item">
               <img
                 class="team-img"
-                srcset="./images/team/img-2.jpg 1x,
-                ./images/team/img-2@2x.jpg 2x"
+                srcset="
+                  ./images/team/img-2.jpg    1x,
+                  ./images/team/img-2@2x.jpg 2x
+                "
                 src="./images/team/img-2.jpg"
                 alt="team member 2"
                 width="264"
@@ -293,8 +297,10 @@
             <li class="team-item">
               <img
                 class="team-img"
-                srcset="./images/team/img-3.jpg 1x,
-                ./images/team/img-3@2x.jpg 2x"
+                srcset="
+                  ./images/team/img-3.jpg    1x,
+                  ./images/team/img-3@2x.jpg 2x
+                "
                 src="./images/team/img-3.jpg"
                 alt="team member 3"
                 width="264"
@@ -361,8 +367,10 @@
             <li class="team-item">
               <img
                 class="team-img"
-                srcset="./images/team/img-4.jpg 1x,
-                ./images/team/img-4@2x.jpg 2x"
+                srcset="
+                  ./images/team/img-4.jpg    1x,
+                  ./images/team/img-4@2x.jpg 2x
+                "
                 src="./images/team/img-4.jpg"
                 alt="team member 4"
                 width="264"
@@ -439,8 +447,11 @@
               <div class="portfolio-wrapper">
                 <img
                   class="portfolio-img"
-
-                  src="./images/portfolio-1.jpg"
+                  srcset="
+                    ./images/prodacts/img_portfolio-1@1x.jpg 1x,
+                    ./images/prodacts/img_portfolio-1@2x.jpg 2x
+                  "
+                  src="./images/prodacts/img_portfolio-1.jpg"
                   alt="app"
                   width="360"
                 />
@@ -459,7 +470,11 @@
               <div class="portfolio-wrapper">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio-2.jpg"
+                  srcset="
+                    ./images/prodacts/img_portfolio-2@1x.jpg 1x,
+                    ./images/prodacts/img_portfolio-2@2x.jpg 2x
+                  "
+                  src="./images/prodacts/img_portfolio-2.jpg"
                   alt="payment"
                   width="360"
                 />
@@ -478,7 +493,11 @@
               <div class="portfolio-wrapper">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio-3.jpg"
+                  srcset="
+                    ./images/prodacts/img_portfolio-3@1x.jpg 1x,
+                    ./images/prodacts/img_portfolio-3@2x.jpg 2x
+                  "
+                  src="./images/prodacts/img_portfolio-3.jpg"
                   alt="app"
                   width="360"
                 />
@@ -497,7 +516,11 @@
               <div class="portfolio-wrapper">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio-4.jpg"
+                  srcset="
+                    ./images/prodacts/img_portfolio-4@1x.jpg 1x,
+                    ./images/prodacts/img_portfolio-4@2x.jpg 2x
+                  "
+                  src="./images/prodacts/img_portfolio-4.jpg"
                   alt="taxi"
                   width="360"
                 />
@@ -516,7 +539,11 @@
               <div class="portfolio-wrapper">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio-5.jpg"
+                  srcset="
+                    ./images/prodacts/img_portfolio-5@1x.jpg 1x,
+                    ./images/prodacts/img_portfolio-5@2x.jpg 2x
+                  "
+                  src="./images/prodacts/img_portfolio-5.jpg"
                   alt="screen"
                   width="360"
                 />
@@ -535,7 +562,11 @@
               <div class="portfolio-wrapper">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio-6.jpg"
+                  srcset="
+                    ./images/prodacts/img_portfolio-6@1x.jpg 1x,
+                    ./images/prodacts/img_portfolio-6@2x.jpg 2x
+                  "
+                  src="./images/prodacts/img_portfolio-6.jpg"
                   alt="woman"
                   width="360"
                 />
@@ -554,7 +585,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer hide">
+    <footer class="footer">
       <div class="footer-container container">
         <div class="blok1">
           <a class="logo footer-logo" href="./index.html"
@@ -646,7 +677,7 @@
     </footer>
 
     <!--Modal window-->
-    <div class="backdrop hide" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="btn-close" type="button" data-modal-close>
           <svg class="btn-icon" width="8" height="8">
@@ -755,73 +786,73 @@
       </ul>
       <address class="mobile-menu-wraper">
         <ul class="wraper-mobile-menu-list">
-           <li class="mobile-menu-items">
+          <li class="mobile-menu-items">
             <a class="mobile-contacts-link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a>
+              >+11 (000) 111-11-11</a
+            >
           </li>
           <li class="mobile-menu-items">
             <a class="contacts-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a>
+              >info@devstudio.com</a
+            >
           </li>
-         
         </ul>
       </address>
 
-       <ul class="mobile-menu-social">
-            <li class="social-item">
-              <a
-                class="social-link"
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to Instagram"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a
-                class="social-link"
-                href="https://www.twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to Twitter"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a
-                class="social-link"
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to Facebook"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a
-                class="social-link"
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to Linkedin"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <ul class="mobile-menu-social">
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Instagram"
+          >
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Twitter"
+          >
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Facebook"
+          >
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Linkedin"
+          >
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <script src="./js/modal.js"></script>
