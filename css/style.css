@@ -1,8 +1,8 @@
+/* #region Common */
 .hide {
   display: none;
 }
 
-/* #region Common */
 * {
   box-sizing: border-box;
 }
@@ -497,6 +497,7 @@ body {
 
 .team {
   background: #f4f4fd;
+  padding: 96px 0;
 }
 
 .item-sub {
@@ -512,20 +513,17 @@ body {
   color: #2e2f42;
   font-weight: 700;
   margin-bottom: 72px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 96px;
 }
 
 .team-list {
-  /*gap: 72px;*/
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
 
 .team-item {
   background-color: #ffffff;
-  /* width: calc((100% - 3 * 24px) / 4);*/
   border-radius: 0px 0px 4px 4px;
   box-shadow:
     0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -537,7 +535,6 @@ body {
   border: 1px solid #000;
 }
 
-/* Будет работать до 768 размера планшетов */
 @media only screen and (max-width: 767px) {
   .team-item:not(:last-child) {
     margin-bottom: 72px;
@@ -696,15 +693,16 @@ body {
   flex-wrap: wrap;
   align-items: center; /* Центрируем всё */
   gap: 72px; /* Расстояние между блоками по макету */
+  text-align: center;
 }
 
 .blok1 {
   width: 100%;
   max-width: 264px;
-  text-align: center;
 }
 
 .blok2 {
+  margin-bottom: 72px;
 }
 
 .social-bloks {
@@ -772,6 +770,8 @@ body {
   width: 100%;
   font-weight: 400;
   color: #ffffff;
+  margin-bottom: 72px;
+  font-size: 16px;
 }
 
 .footer-text-social {
@@ -788,7 +788,6 @@ body {
 }
 
 .blok-form {
-  margin-left: auto;
 }
 
 .footer-text-subscribe {
@@ -808,6 +807,7 @@ body {
   gap: 16px;
   flex-direction: column;
   align-items: center;
+  width: 288px;
 }
 
 .input-subscribe {
@@ -824,6 +824,7 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
 }
+
 input[type="email"]::placeholder {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -1218,9 +1219,6 @@ input[type="email"]::placeholder {
     display: none;
   }
 }
-/* #endregion Mobile menu */
-
-/* #region Mobile menu */
 
 .mobile-menu {
   position: fixed;
@@ -1318,10 +1316,20 @@ input[type="email"]::placeholder {
 /* #region Media */
 
 @media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*column-gap: 24px;
+    row-gap: 64px;
+    justify-content: center;*/
+    gap: 64px 24px;
+    align-items: stretch;
+  }
+
   .team-item {
-    width: calc((100% - 48px) / 2);
-    margin-left: 24px;
-    margin-bottom: 64px;
+    width: calc((100% - 24px) / 2);
+    /*margin-left: 24px;
+    margin-bottom: 64px;*/
   }
 
   .team-img {
@@ -1329,11 +1337,44 @@ input[type="email"]::placeholder {
     margin-left: auto;
     margin-right: auto;
   }
-  /* .container {
-    max-width: 768px;
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 72px 24px;
     padding-left: 108px;
-    padding-right: 108px;
-  }*/
+    text-align: left;
+  }
+
+  .blok1 {
+    width: 264px;
+    margin-bottom: 0;
+  }
+
+  .footer-text {
+    margin-bottom: 0;
+  }
+
+  .blok2 {
+    margin-bottom: 0;
+  }
+
+  .footer-text-social,
+  .footer-text-subscribe {
+    text-align: left;
+  }
+
+  .form-subscribe {
+    flex-direction: row;
+    gap: 24px;
+    width: auto;
+  }
+
+  .input-subscribe {
+    width: 264px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1347,6 +1388,39 @@ input[type="email"]::placeholder {
     margin-bottom: 64px;*/
   }
 
-  .portfolio-title {
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  .blok1 {
+    margin-right: 120px;
+  }
+
+  .blok2 {
+    margin-right: 80px;
+  }
+
+  .blok-form {
+    margin-left: 0;
+  }
+
+  .form-subscribe {
+    flex-direction: row;
+    gap: 24px;
   }
 }
+
+/* #endregion Media */
