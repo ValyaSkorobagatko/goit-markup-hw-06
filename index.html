@@ -31,21 +31,13 @@
           <a class="logo header-logo" href="./index.html"
             >Web<span class="logo-part">Studio</span></a
           >
-          <button class="mobile-menu-btn" type="button">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M3.5 14H24.5M3.5 7H24.5M3.5 21H24.5"
-                stroke="#111111"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+          <button
+            class="mobile-menu-btn"
+            type="button"
+            aria-label="Мобільне меню"
+          >
+            <svg class="mobile-menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
 
@@ -126,8 +118,8 @@
               </div>
               <h3 class="main-subtitle">Diligence</h3>
               <p class="main-text">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
+                Research and confirm brands with the strongest digital growth
+                opportunities and minimize risk.
               </p>
             </li>
             <li class="main-item">
@@ -767,92 +759,94 @@
     </div>
 
     <!--Mobile menu-->
-    <div class="mobile-menu">
-      <button class="button-mobile">
-        <svg class="btn-icon" width="8" height="8">
-          <use href="./images/icons.svg#close"></use>
-        </svg>
-      </button>
-      <ul class="mobile-menu-list">
-        <li class="mobile-item">
-          <a class="mobile-menu-link-studio" href="./index.html">Studio</a>
-        </li>
-        <li class="mobile-item">
-          <a class="mobile-menu-link" href="">Portfolio</a>
-        </li>
-        <li class="mobile-item">
-          <a class="mobile-menu-link" href="">Contacts</a>
-        </li>
-      </ul>
-      <address class="mobile-menu-wraper">
-        <ul class="wraper-mobile-menu-list">
-          <li class="mobile-menu-items">
-            <a class="mobile-contacts-link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
+    <div class="mobile-menu js-menu-container">
+      <div class="container mobile-menu-container">
+        <button class="button-mobile js-close-menu">
+          <svg class="btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-list">
+          <li class="mobile-item">
+            <a class="mobile-menu-link-studio" href="./index.html">Studio</a>
           </li>
-          <li class="mobile-menu-items">
-            <a class="contacts-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+          <li class="mobile-item">
+            <a class="mobile-menu-link" href="">Portfolio</a>
+          </li>
+          <li class="mobile-item">
+            <a class="mobile-menu-link" href="">Contacts</a>
           </li>
         </ul>
-      </address>
+        <address class="mobile-menu-wraper">
+          <ul class="wraper-mobile-menu-list">
+            <li class="mobile-menu-items">
+              <a class="mobile-contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-items">
+              <a class="contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
 
-      <ul class="mobile-menu-social">
-        <li class="social-item">
-          <a
-            class="social-link"
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link to Instagram"
-          >
-            <svg class="social-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-item">
-          <a
-            class="social-link"
-            href="https://www.twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link to Twitter"
-          >
-            <svg class="social-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-item">
-          <a
-            class="social-link"
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link to Facebook"
-          >
-            <svg class="social-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-item">
-          <a
-            class="social-link"
-            href="https://www.linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link to Linkedin"
-          >
-            <svg class="social-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+        <ul class="mobile-menu-social">
+          <li class="social-item">
+            <a
+              class="social-link"
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Instagram"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Twitter"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Facebook"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Linkedin"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <script src="./js/modal.js"></script>
