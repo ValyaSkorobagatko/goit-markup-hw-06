@@ -6,20 +6,18 @@
 * {
   box-sizing: border-box;
 }
-/* Скидання підкреслення для посилань */
+
 a {
   text-decoration: none;
 }
 
-/* Скидання стилю маркерів для списків */
 ul,
 ol {
   list-style-type: none;
-  padding-left: 0; /* Опціонально, для видалення відступу у списках */
-  margin: 0; /* Опціонально, для видалення відступу у списках */
+  padding-left: 0;
+  margin: 0;
 }
 
-/*Обнулення дефолтних margine від браузера*/
 h1,
 h2,
 h5,
@@ -35,7 +33,7 @@ img {
 }
 
 .section {
-  padding: 48px auto;
+  padding: 96px auto;
 }
 
 body {
@@ -44,12 +42,11 @@ body {
   background-color: #fff;
 }
 
-/* Mobile screen - base styles */
 .container {
-  max-width: 320px;
+  min-width: 320px;
+  max-width: 428px;
   padding: 0 16px;
   margin: 0 auto;
-  outline-color: red;
 }
 
 /* Tablet screen */
@@ -73,7 +70,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -87,7 +84,7 @@ body {
   .section-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 111%;
+    line-height: 1.11;
 
     margin-bottom: 72px;
   }
@@ -99,7 +96,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 36px;
-    line-height: 111%;
+    line-height: 1.11;
 
     margin-bottom: 72px;
   }
@@ -230,7 +227,7 @@ body {
 }
 
 .nav-link:hover,
-.nav-link:focus::after {
+.nav-link:focus {
   color: #404bbf;
 }
 
@@ -437,13 +434,6 @@ body {
 
 /* Mobile screen */
 /* --- ГЛОБАЛЬНІ ТА СПІЛЬНІ СТИЛІ --- */
-.container {
-  max-width: 428px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin: 0 auto;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -569,7 +559,10 @@ body {
 }
 
 .item-sub {
-  padding: 32px 0;
+  padding: 32px 16px;
+  text-align: center;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .team-title {
@@ -591,6 +584,7 @@ body {
 }
 
 .team-item {
+  width: 264px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow:
@@ -605,7 +599,6 @@ body {
 
 @media only screen and (max-width: 767px) {
   .team-item:not(:last-child) {
-    margin-bottom: 72px;
   }
 }
 
@@ -629,6 +622,7 @@ body {
 /* #region Portfolio */
 
 .portfolio {
+  padding: 96px 0;
 }
 
 .port-cont {
@@ -672,7 +666,6 @@ body {
 /* Чтобы флекс не применялся до размера планшета. li и ul блоковые элементы*/
 @media only screen and (max-width: 767px) {
   .portfolio-item:not(:last-child) {
-    margin-bottom: 48px;
   }
 }
 
@@ -723,7 +716,7 @@ body {
   padding: 40px 32px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -764,6 +757,11 @@ body {
   text-align: center;
 }
 
+.footer-text {
+  text-align: left;
+  max-width: 264px;
+}
+
 .blok1 {
   width: 100%;
   max-width: 264px;
@@ -780,10 +778,11 @@ body {
 
 .social {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 24px;
   margin-top: 8px;
   justify-content: center;
+  align-items: center;
 }
 
 .social-item {
@@ -855,9 +854,6 @@ body {
   color: #f4f4fd;
 }
 
-.blok-form {
-}
-
 .footer-text-subscribe {
   font-weight: 500;
   margin-bottom: 16px;
@@ -897,7 +893,7 @@ input[type="email"]::placeholder {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 200%;
+  line-height: 2;
   letter-spacing: 0.04em;
   color: #ffffff;
 }
@@ -968,7 +964,7 @@ input[type="email"]::placeholder {
   border-radius: 4px;
   background-color: #fcfcfc;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   box-shadow:
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -1010,7 +1006,7 @@ input[type="email"]::placeholder {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -1026,7 +1022,7 @@ input[type="email"]::placeholder {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
@@ -1041,7 +1037,7 @@ input[type="email"]::placeholder {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
@@ -1127,7 +1123,7 @@ input[type="email"]::placeholder {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
@@ -1364,6 +1360,10 @@ input[type="email"]::placeholder {
 
 .mobile-contacts-link {
   color: #4d5ae5;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
 }
 .contacts-link {
   color: #434455;
@@ -1377,9 +1377,18 @@ input[type="email"]::placeholder {
 }
 
 .wraper-mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
-.mobile-menu-items {
+
+.mobile-contacts-link.email {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #434455;
 }
+
 .contacts-link {
 }
 .mobile-menu-social {
@@ -1409,7 +1418,7 @@ input[type="email"]::placeholder {
   }
 
   .team-item {
-    width: 264px;
+    margin: 0 auto;
   }
 
   .team-img {
@@ -1426,6 +1435,10 @@ input[type="email"]::placeholder {
     gap: 72px 24px;
     padding-left: 108px;
     text-align: left;
+  }
+
+  .footer-subscribe-container {
+    margin-left: auto;
   }
 
   .blok1 {
@@ -1464,8 +1477,6 @@ input[type="email"]::placeholder {
 
   .team-item {
     width: calc((100% - 96px) / 4);
-    /*margin-left: 24px;
-    margin-bottom: 64px;*/
   }
 
   .footer {
@@ -1494,7 +1505,7 @@ input[type="email"]::placeholder {
   }
 
   .blok-form {
-    margin-left: 0;
+    margin-left: auto;
   }
 
   .form-subscribe {
