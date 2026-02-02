@@ -20,6 +20,7 @@ ol {
 
 h1,
 h2,
+h3,
 h5,
 h6,
 p {
@@ -196,6 +197,7 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link-studio {
@@ -294,7 +296,6 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -688,8 +689,12 @@ body {
 
 /* Desktop screen */
 @media only screen and (min-width: 1158px) {
+  .portfolio {
+    padding: 120px 0;
+  }
+
   .portfolio-item {
-    width: calc((100% - 24px * 2) / 3);
+    width: calc((100% - 48px) / 3);
     box-shadow: none;
   }
 }
@@ -1241,6 +1246,11 @@ input[type="email"]::placeholder {
   fill: transparent;
 }
 
+.span-privacy svg {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .input-checkbox visialy-hidden {
   margin-right: 8px;
 }
@@ -1299,6 +1309,11 @@ input[type="email"]::placeholder {
   border: none;
   fill: #f4f4fd;
 }
+
+.input-checkbox:checked + .text-checkbox .span-privacy svg {
+  opacity: 1;
+}
+
 /* #endregion */
 
 /* #region Mobile menu */
@@ -1411,8 +1426,10 @@ input[type="email"]::placeholder {
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
+
 .contacts-link {
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu .social-link {
@@ -1509,12 +1526,12 @@ input[type="email"]::placeholder {
 }
 
 @media screen and (min-width: 1158px) {
-  .main-item {
-    width: calc((100% - 96px) / 4);
+  .team {
+    padding: 120px 0;
   }
 
   .team-item {
-    width: calc((100% - 96px) / 4);
+    width: calc((100% - 72px) / 4);
   }
 
   .footer {
