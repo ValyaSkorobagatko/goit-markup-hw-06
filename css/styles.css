@@ -183,9 +183,6 @@ body {
   color: #404bbf;
 }
 
-.nav-item {
-}
-
 .nav-link {
   position: relative;
   color: #404bbf;
@@ -286,10 +283,6 @@ body {
     gap: 40px;
   }
 
-  .contacts-item {
-    padding-right: 40px;
-  }
-
   .contacts-link {
     font-size: 16px;
     line-height: 1.5;
@@ -302,7 +295,6 @@ body {
 
 /* #region Hero */
 
-/* Mobile screen */
 .hero {
   background-color: #2e2f42;
   background-image:
@@ -373,7 +365,6 @@ body {
 .hero .container {
 }
 
-/* Mobile screen */
 .hero-title {
   font-size: 36px;
   color: #fff;
@@ -381,7 +372,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  max-width: 288px;
+  max-width: 216px;
   margin: 0 auto 72px auto;
 }
 
@@ -596,10 +587,6 @@ body {
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.team-img {
-  border: 1px solid #000;
-}
-
 @media only screen and (max-width: 767px) {
   .team-item:not(:last-child) {
   }
@@ -661,7 +648,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 48px;
+    row-gap: 72px;
   }
 }
 
@@ -833,7 +820,7 @@ body {
 .footer-logo {
   display: inline-block;
   color: #4d5ae5;
-  padding: 16px 0;
+  padding: 0;
   margin-bottom: 16px;
 }
 
@@ -1235,6 +1222,7 @@ input[type="email"]::placeholder {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  flex-shrink: 0;
 }
 
 .span-privacy svg {
@@ -1285,6 +1273,7 @@ input[type="email"]::placeholder {
 
 .text-checkbox {
   display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
@@ -1309,6 +1298,12 @@ input[type="email"]::placeholder {
 /* #endregion */
 
 /* #region Mobile menu */
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -1517,6 +1512,10 @@ input[type="email"]::placeholder {
   .input-subscribe {
     width: 264px;
   }
+
+  .mobile-menu {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1559,6 +1558,10 @@ input[type="email"]::placeholder {
   .form-subscribe {
     flex-direction: row;
     gap: 24px;
+  }
+
+  .mobile-menu {
+    display: none;
   }
 }
 
